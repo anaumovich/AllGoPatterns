@@ -1,4 +1,4 @@
-package AllGoPatterns
+package main
 
 import "fmt"
 
