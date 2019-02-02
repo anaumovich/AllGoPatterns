@@ -1,4 +1,4 @@
-/*package main
+package main
 
 import (
 	"AllGoPatterns/SOLID"
@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	Animal := SOLID.NewAnimal(false,4,"Animal")
+	Animal := SOLID.NewAnimal(false, 4, "Animal")
 	Cat := SOLID.NewCat(*Animal)
 	BengalCat := SOLID.NewBengalCat(*Cat)
 
@@ -17,4 +17,3 @@ func main() {
 	_, _ = fmt.Println(Animal)
 	fmt.Println()
 }
-*/
