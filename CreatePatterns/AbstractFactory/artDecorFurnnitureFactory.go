@@ -2,12 +2,7 @@ package AbstractFactory
 
 import "AllGoPatterns/CreatePatterns/AbstractFactory/products"
 
-type ArtDecorFurnitureFactory struct {
-}
-
-func NewArtDecorFurnitureFactory() *ArtDecorFurnitureFactory {
-	return &ArtDecorFurnitureFactory{}
-}
+type ArtDecorFurnitureFactory struct{}
 
 func (*ArtDecorFurnitureFactory) CreateChair() products.Chair {
 	return new(products.ArtDecorChair)

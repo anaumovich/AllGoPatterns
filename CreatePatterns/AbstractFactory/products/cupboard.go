@@ -7,6 +7,7 @@ type Cupboard interface {
 }
 
 //
+
 type ModernCupboard struct{}
 
 func (*ModernCupboard) HasShelf() {
@@ -14,6 +15,7 @@ func (*ModernCupboard) HasShelf() {
 }
 
 //
+
 type ArtDecorCupboard struct{}
 
 func (*ArtDecorCupboard) HasShelf() {
@@ -21,6 +23,7 @@ func (*ArtDecorCupboard) HasShelf() {
 }
 
 //
+
 type VictorianCupboard struct{}
 
 func (*VictorianCupboard) HasShelf() {

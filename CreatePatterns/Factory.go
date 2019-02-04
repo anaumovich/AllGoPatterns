@@ -16,6 +16,7 @@ import "fmt"
 
 type logistic struct {
 	planDelivery string
+	transport    transport
 }
 
 func (*logistic) transportCreator(x string) transport {
@@ -46,6 +47,7 @@ func (*car) deliver() {
 
 func main() {
 	logistic := new(logistic)
-	logistic.transportCreator("car").deliver()
+	logistic.transport = logistic.transportCreator("car")
+	logistic.transport.deliver()
 	logistic.transportCreator("plane").deliver()
 }

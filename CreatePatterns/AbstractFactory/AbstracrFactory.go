@@ -20,11 +20,11 @@ type AbstractFurnitureFactory interface {
 func CreateFurniture(x string) AbstractFurnitureFactory {
 	switch x {
 	case "modern":
-		return NewModernFurnitureFactory()
+		return new(ModernFurnitureFactory)
 	case "artDecor":
-		return NewArtDecorFurnitureFactory()
+		return new(ArtDecorFurnitureFactory)
 	case "victorian":
-		return NewVictorianFurnitureFactory()
+		return new(VictorianFurnitureFactory)
 	}
 	return nil
 }
